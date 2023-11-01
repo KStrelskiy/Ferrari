@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!--Задает кодировку для HTML-документа (рекомендуется использовать кодировку UTF-8 - кодировка для Unicode)-->
+        <meta charset="UTF-8" />
+        <!--Мета тег "X-UA-Compatible" Управляет режимом отображением страниц в браузерах IE8+-->
+        <!--"IE=edge" всегда использует последний доступный стандартный режим отображения независимо от <!DOCTYPE>-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Viewport - это видимая пользователю область веб-страницы, то, что может увидеть пользователь, не прибегая к прокрутке-->
+        <!--Meta-тег "viewport" сообщает браузеру о том, как именно обрабатывать размеры страницы, и изменять её масштаб-->
+        <!--константа "device-width", которая задаёт ширину страницы в соответствии с размером экрана (с адаптивным дизайном width=device-width)-->
+        <!--"initial-scale" – начальный масштаб страницы (Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать»)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Подключение файла swiper.css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!--Подключение файла style.css-->
+        <link rel="stylesheet" href="css/style.min.css" />
+        <!--Подключение библиотеки JavaScript-->
+        <!--Название сайта-->
+        <title>Ferrari</title>
+    </head>
+    <!--Всё, что отобразиться на сайте-->
+    <body>
+        <div class="wrapper">
+            <header class="header" id="header">
+                <div class="header__container">
+                    <nav class="header__nav nav">
+                        <a class="nav__logo">
+                            <img
+                                class="nav__logo-img"
+                                src="images/logo.svg"
+                                alt="logo"
+                            />
+                        </a>
+                        <div class="nav__items">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__item-link" href="#services">
+                                        Услуги
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__item-link" href="#benefits">
+                                        Преимущества
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__item-link" href="#works">
+                                        Наши работы
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__item-link" href="#contacts">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="nav__telephone" href="tel:7999990990"
+                                >+7 (999) 999-09-90</a
+                            >
+                            <ul class="social">
+                                <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <img
+                                            class="social-svg"
+                                            src="images/whatsapp.svg"
+                                            alt="whatsapp"
+                                        />
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="social-link" href="#">
+                                        <img
+                                            class="social-svg"
+                                            src="images/telegram.svg"
+                                            alt="telegram"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+
+<section class="main">
+
+    <div class="main__container">
+
+        <div class="main__inner">
+
+            <h1 class="main__title">F812 SUPER</h1>
+
+            <h2 class="title --mb20 --order">Превосходство в обслуживании</h2>
+
+            <p class="main__sub-title">Ваша машина в надежных руках!</p>
+
+            <button class="main__btn btn">ОСТАВИТЬ ЗАЯВКУ</button>
+
+            <ul class="main__list">
+
+                <li class="main__item mexico-svg">
+
+                    <p>Специально</p>
+
+                    <p>обученные механики</p>
+
+                </li>
+
+                <li class="main__item crown-svg">Только премиум качество</li>
+
+            </ul>
+
+            <a href="#services" class="main__btn-navigation">Листайте вниз</a>
+
+            <div class="main__img-ferrari">
+
+                <img src="images/ferrari.webp" alt="Ferrari" />
+
+            </div>
+
+        </div>
+
+        <img
+
+            class="main__img-symbol"
+
+            src="images/symbol-ferrari.webp"
+
+            alt="Ferrari"
+
+        />
+
+    </div>
+
+</section>
+
+
+
+<section class="callback">
+
+    <div class="callback__container">
+
+        <div class="callback__inner">
+
+            <h4 class="callback__inner-title">
+
+                <span class="callback__inner-title_orange">Чтобы узнать точную стоимость работ,</span>
+
+                <span>запишитесь на бесплатную консультацию</span>
+
+            </h4>
+
+            <form class="callback__form" name="form" action="#">
+
+                <input class="callback__form-name" name="nameUser" type="text" placeholder="Ваше имя" required>
+
+                <div class="callback__form-tel">
+
+                    <img
+
+                        class="callback__form-tel-flag"
+
+                        src="images/russia.svg"
+
+                        alt="ru"
+
+                        data-country="russia"
+
+                    />
+
+                    <img
+
+                        class="callback__form-tel-arrow"
+
+                        src="images/arrow-form.svg"
+
+                        alt="arrow"
+
+                    />
+
+                    <p class="callback__form-tel-code">+7</p>
+
+                    <input
+
+                        class="callback__form-tel-number telephone"
+
+                        type="text"
+
+                        name="telephoneUser"
+
+                        placeholder="(999) 999-99-99"
+
+                    />
+
+                    <ul class="callback__form-tel-code_list">
+
+                        <li
+
+                            class="callback__form-tel-code_item"
+
+                            data-country="russia"
+
+                        >
+
+                            <img
+
+                                class="callback__form-tel-flag"
+
+                                src="images/russia.svg"
+
+                                alt="russia"
+
+                            />
+
+                            <span>+7</span>
+
+                        </li>
+
+                        <li
+
+                            class="callback__form-tel-code_item"
+
+                            data-country="belarus"
+
+                        >
+
+                            <img
+
+                                class="callback__form-tel-flag"
+
+                                src="images/belarus.svg"
+
+                                alt="belarus"
+
+                            />
+
+                            <span>+375</span>
+
+                        </li>
+
+                        <li
+
+                            class="callback__form-tel-code_item"
+
+                            data-country="georgia"
+
+                        >
+
+                            <img
+
+                                class="callback__form-tel-flag"
+
+                                src="images/georgia.svg"
+
+                                alt="georgia"
+
+                            />
+
+                            <span>+995</span>
+
+                        </li>
+
+                        <li
+
+                            class="callback__form-tel-code_item"
+
+                            data-country="usa"
+
+                        >
+
+                            <img
+
+                                class="callback__form-tel-flag"
+
+                                src="images/usa.svg"
+
+                                alt="usa"
+
+                            />
+
+                            <span>+1</span>
+
+                        </li>
+
+                        <li
+
+                            class="callback__form-tel-code_item"
+
+                            id="poland"
+
+                            data-country="poland"
+
+                        >
+
+                            <img
+
+                                class="callback__form-tel-flag"
+
+                                src="images/poland.svg"
+
+                                alt="poland"
+
+                            />
+
+                            <span>+48</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <button class="callback__form-btn btn" type="submit">
+
+                    Отправить
+
+                </button>
+
+            </form>
+
+            <p class="callback__inner-text">
+
+                Оставляя заявку, вы даете согласие на обработку персональных
+
+                данных
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <div class="services__container">
+
+        <h2 class="title services__title">Наши услуги</h2>
+
+        <p class="services__subtitle">
+
+            Снизу мы предоставили список наших услуг по разделам:
+
+        </p>
+
+        <ul class="services__list">
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-1.png" alt="ТЕХ.ОБСЛУЖИВАНИЕ">
+
+                    <h3 class="services__item-title">ТЕХ.ОБСЛУЖИВАНИЕ</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-2.png" alt="ДИАГНОСТИКА">
+
+                    <h3 class="services__item-title">ДИАГНОСТИКА</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-3.png" alt="ХОДОВАЯ ЧАСТЬ">
+
+                    <h3 class="services__item-title">ХОДОВАЯ ЧАСТЬ</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-4.png" alt="ТРАНСМИССИЯ">
+
+                    <h3 class="services__item-title">ТРАНСМИССИЯ</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-5.png" alt="ДВИГАТЕЛЬ">
+
+                    <h3 class="services__item-title">ДВИГАТЕЛЬ</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-6.png" alt="ВЫХЛОПНАЯ СИСТЕМА">
+
+                    <h3 class="services__item-title">ВЫХЛОПНАЯ СИСТЕМА</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-7.png" alt="РУЛЕВОЕ УПРАВЛЕНИЕ">
+
+                    <h3 class="services__item-title">РУЛЕВОЕ УПРАВЛЕНИЕ</h3>
+
+                </a>
+
+                </li>
+
+            <li class="services__item">
+
+                <a class="services__link" href="#">
+
+                    <img class="services__item-img" src="images/service-8.png" alt="ТОПЛИВНАЯ СИСТЕМА">
+
+                    <h3 class="services__item-title">ТОПЛИВНАЯ СИСТЕМА</h3>
+
+                </a>
+
+                </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="benefits" id="benefits">
+
+    <div class="benefits__container">
+
+        <h2 class="title benefits__title">Почему стоит выбрать нас</h2>
+
+        <ul class="benefits__list">
+
+            <li class="benefits__item">
+
+                <img
+
+                    class="benefits__item-svg"
+
+                    src="images/cup.svg"
+
+                    alt="cup"
+
+                />
+
+                <h3 class="benefits__item-subtitle">Заголовок преимущества</h3>
+
+                <p class="benefits__text">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+
+                    do eiusmod tempor incididunt ut labore et dolore magna
+
+                </p>
+
+            </li>
+
+            <li class="benefits__item">
+
+                <img
+
+                    class="benefits__item-svg"
+
+                    src="images/drive.svg"
+
+                    alt="drive"
+
+                />
+
+                <h3 class="benefits__item-subtitle">Заголовок преимущества</h3>
+
+                <p class="benefits__text">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+
+                    do eiusmod tempor incididunt ut labore et dolore magna
+
+                </p>
+
+            </li>
+
+            <li class="benefits__item">
+
+                <img
+
+                    class="benefits__item-svg"
+
+                    src="images/clock.svg"
+
+                    alt="clock"
+
+                />
+
+                <h3 class="benefits__item-subtitle">Заголовок преимущества</h3>
+
+                <p class="benefits__text">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+
+                    do eiusmod tempor incididunt ut labore et dolore magna
+
+                </p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<section class="works" id="works">
+
+    <div class="works__container">
+
+        <h2 class="title works__title">Наши работы</h2>
+
+        <div class="swiper swiper1">
+
+            <ul class="works__list swiper-wrapper">
+
+                <li class="works__item swiper-slide">
+
+                    <a class="works__item-link" href="#">
+
+                        <img
+
+                            class="works__item-img"
+
+                            src="images/work-img.png"
+
+                            alt="work image"
+
+                        />
+
+                        <h4 class="works__item-title">Название работы</h4>
+
+                    </a>
+
+                    <p class="works__item-text">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                        sed do eiusmod tempor incididunt ut labore et dolore
+
+                        magna Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        elit, sed do eiusmod tempor incididunt ut labore et
+
+                        dolore magna
+
+                    </p>
+
+                </li>
+
+                <li class="works__item swiper-slide">
+
+                    <a class="works__item-link" href="#">
+
+                        <img
+
+                            class="works__item-img"
+
+                            src="images/work-img.png"
+
+                            alt="work image"
+
+                        />
+
+                        <h4 class="works__item-title">Название работы</h4>
+
+                    </a>
+
+                    <p class="works__item-text">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                        sed do eiusmod tempor incididunt ut labore et dolore
+
+                        magna Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        elit, sed do eiusmod tempor incididunt ut labore et
+
+                        dolore magna
+
+                    </p>
+
+                </li>
+
+                <li class="works__item swiper-slide">
+
+                    <a class="works__item-link" href="#">
+
+                        <img
+
+                            class="works__item-img"
+
+                            src="images/work-img.png"
+
+                            alt="work image"
+
+                        />
+
+                        <h4 class="works__item-title">Название работы</h4>
+
+                    </a>
+
+                    <p class="works__item-text">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                        sed do eiusmod tempor incididunt ut labore et dolore
+
+                        magna Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        elit, sed do eiusmod tempor incididunt ut labore et
+
+                        dolore magna
+
+                    </p>
+
+                </li>
+
+                <li class="works__item swiper-slide">
+
+                    <a class="works__item-link" href="#">
+
+                        <img
+
+                            class="works__item-img"
+
+                            src="images/work-img.png"
+
+                            alt="work image"
+
+                        />
+
+                        <h4 class="works__item-title">Название работы</h4>
+
+                    </a>
+
+                    <p class="works__item-text">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+                        sed do eiusmod tempor incididunt ut labore et dolore
+
+                        magna Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        elit, sed do eiusmod tempor incididunt ut labore et
+
+                        dolore magna
+
+                    </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="btn-inner">
+
+            <div class="swiper-button-prev btn-prev-works">
+
+                <img src="images/arrow-prev.svg" alt="arrow-prev" />
+
+            </div>
+
+            <div class="swiper-button-next btn-next-works">
+
+                <img src="images/arrow-next.svg" alt="arrow-next" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="models">
+
+    <div class="models__container">
+
+        <h2 class="title models__title">Список моделей</h2>
+
+        <div class="swiper swiper2">
+
+            <ul class="models__list swiper-wrapper">
+
+                <li class="models__item swiper-slide">
+
+                    <a class="models__item-link" href="#">
+
+                        <div class="models__item-img">
+
+                            <img
+
+                                src="  images/model-1.png"
+
+                                alt="GTC4LUSSO"
+
+                            />
+
+                        </div>
+
+                        <div class="models__item-inner">
+
+                            <h5 class="models__item-model">GTC4LUSSO</h5>
+
+                            <p class="models__item-date">2016-2020</p>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+                <li class="models__item swiper-slide">
+
+                    <a class="models__item-link" href="#">
+
+                        <div class="models__item-img">
+
+                            <img
+
+                                src="  images/model-2.png"
+
+                                alt="GTC4LUSSO"
+
+                            />
+
+                        </div>
+
+                        <div class="models__item-inner">
+
+                            <h5 class="models__item-model">PUROSANGUE</h5>
+
+                            <p class="models__item-date">2022</p>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+                <li class="models__item swiper-slide">
+
+                    <a class="models__item-link" href="#">
+
+                        <div class="models__item-img">
+
+                            <img
+
+                                src="  images/model-3.png"
+
+                                alt="GTC4LUSSO"
+
+                            />
+
+                        </div>
+
+                        <div class="models__item-inner">
+
+                            <h5 class="models__item-model">F8</h5>
+
+                            <p class="models__item-date">2019</p>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+                <li class="models__item swiper-slide">
+
+                    <a class="models__item-link" href="#">
+
+                        <div class="models__item-img">
+
+                            <img
+
+                                src="  images/model-4.png"
+
+                                alt="GTC4LUSSO"
+
+                            />
+
+                        </div>
+
+                        <div class="models__item-inner">
+
+                            <h5 class="models__item-model">812</h5>
+
+                            <p class="models__item-date">2017</p>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+                <li class="models__item swiper-slide">
+
+                    <a class="models__item-link" href="#">
+
+                        <div class="models__item-img">
+
+                            <img
+
+                                src="  images/model-2.png"
+
+                                alt="GTC4LUSSO"
+
+                            />
+
+                        </div>
+
+                        <div class="models__item-inner">
+
+                            <h5 class="models__item-model">812</h5>
+
+                            <p class="models__item-date">2017</p>
+
+                        </div>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="btn-inner btn-models">
+
+            <div class="swiper-button-prev btn-prev-models">
+
+                <img src="  images/arrow-prev.svg" alt="arrow-prev" />
+
+            </div>
+
+            <div class="swiper-button-next btn-next-models">
+
+                <img src="  images/arrow-next.svg" alt="arrow-next" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="contacts" id="contacts">
+
+    <div class="contacts__container">
+
+        <div class="contacts__inner">
+
+            <div class="contacts__content">
+
+                <div class="title contacts__title">Контакты</div>
+
+                <ul class="contacts__content-list">
+
+                    <li class="contacts__content-item">
+
+                        <h6 class="contacts__content-title">Наш адрес:</h6>
+
+                        <a href="#" class="contacts__content-link">
+
+                            Россия, г. Москва, улица Пушкина, дом 1, корпус 2
+
+                        </a>
+
+                    </li>
+
+                    <li class="contacts__content-item">
+
+                        <h6 class="contacts__content-title">Номер телефона</h6>
+
+                        <a
+
+                            href="tel:79999990990"
+
+                            class="contacts__content-link"
+
+                        >
+
+                            +7 (999) 999-09-90
+
+                        </a>
+
+                    </li>
+
+                    <li class="contacts__content-item">
+
+                        <h6 class="contacts__content-title">Наш E-mail</h6>
+
+                        <a
+
+                            href="mailto:example.email@gmail.com"
+
+                            class="contacts__content-link"
+
+                        >
+
+                            example.email@gmail.com
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <h4 class="contacts__subtitle">Мы в социальных сетях</h4>
+
+                <ul class="social">
+
+                    <li class="social-item">
+
+                        <a class="social-link" href="#">
+
+                            <img
+
+                                class="social-svg"
+
+                                src="images/whatsapp.svg"
+
+                                alt="whatsapp"
+
+                            />
+
+                        </a>
+
+                    </li>
+
+                    <li class="social-item">
+
+                        <a class="social-link" href="#">
+
+                            <img
+
+                                class="social-svg"
+
+                                src="images/telegram.svg"
+
+                                alt="telegram"
+
+                            />
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <form class="form" name="form" action="#">
+
+                <h3 class="form-title">Оставьте заявку</h3>
+
+                <p class="form-sub-title">
+
+                    Заполните форму и мы Вам перезвоним!
+
+                </p>
+
+                <input
+
+                    class="form-name"
+
+                    type="text"
+
+                    name="nameUser"
+
+                    placeholder="Ваше имя"
+
+                    required
+
+                />
+
+
+
+                <select class="form-select" id="form-select" name="service">
+
+                    <option value="Интересующая услугу">Выберите услугу</option>
+
+                    <option value="Тeх.обслуживание">Тeх.обслуживание</option>
+
+                    <option value="Диагностика">Диагностика</option>
+
+                    <option value="Ходовая часть">Ходовая часть</option>
+
+                    <option value="Трансмиссия">Трансмиссия</option>
+
+                    <option value="Двигатель">Двигатель</option>
+
+                    <option value="Выхлопная система">Выхлопная система</option>
+
+                    <option value="Рулевое управление">
+
+                        Рулевое управление
+
+                    </option>
+
+                    <option value="Топливная система">Топливная система</option>
+
+                </select>
+
+                <div class="form-tel">
+
+                    <img
+
+                        class="form-tel-flag"
+
+                        src="images/russia.svg"
+
+                        alt="ru"
+
+                        data-country="russia"
+
+                    />
+
+                    <img
+
+                        class="form-tel-arrow"
+
+                        src="images/arrow-form.svg"
+
+                        alt="arrow"
+
+                    />
+
+                    <p class="form-tel-code">+7</p>
+
+                    <input
+
+                        class="form-tel-number telephone"
+
+                        type="text"
+
+                        name="telephoneUser"
+
+                        placeholder="(999) 999-99-99"
+
+                    />
+
+                    <ul class="form-tel-code_list">
+
+                        <li
+
+                            class="form-tel-code_item"
+
+                            data-country="russia"
+
+                        >
+
+                            <img
+
+                                class="form-tel-flag"
+
+                                src="images/russia.svg"
+
+                                alt="russia"
+
+                            />
+
+                            <span>+7</span>
+
+                        </li>
+
+                        <li
+
+                            class="form-tel-code_item"
+
+                            data-country="belarus"
+
+                        >
+
+                            <img
+
+                                class="form-tel-flag"
+
+                                src="images/belarus.svg"
+
+                                alt="belarus"
+
+                            />
+
+                            <span>+375</span>
+
+                        </li>
+
+                        <li
+
+                            class="form-tel-code_item"
+
+                            data-country="georgia"
+
+                        >
+
+                            <img
+
+                                class="form-tel-flag"
+
+                                src="images/georgia.svg"
+
+                                alt="georgia"
+
+                            />
+
+                            <span>+995</span>
+
+                        </li>
+
+                        <li
+
+                            class="form-tel-code_item"
+
+                            data-country="usa"
+
+                        >
+
+                            <img
+
+                                class="form-tel-flag"
+
+                                src="images/usa.svg"
+
+                                alt="usa"
+
+                            />
+
+                            <span>+1</span>
+
+                        </li>
+
+                        <li
+
+                            class="form-tel-code_item"
+
+                            data-country="poland"
+
+                        >
+
+                            <img
+
+                                class="form-tel-flag"
+
+                                src="images/poland.svg"
+
+                                alt="poland"
+
+                            />
+
+                            <span>+48</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <button class="form-btn btn" type="submit">Отправить</button>
+
+                <p class="contacts__form-text">
+
+                    Оставляя заявку, вы даете согласие на обработку персональных
+
+                    данных
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="map">
+
+    <img class="map__image" src="images/map.png" alt="map">
+
+    <div class="map__image-icon">
+
+        <img src="images/map-icon.svg" alt="map-icon">
+
+    </div>
+
+</div>
+
+<div class="overlay">
+
+    <div class="popup">
+
+        <form class="form form-popup" name="form" action="#">
+
+            <h3 class="form-title">Оставьте заявку</h3>
+
+            <p class="form-sub-title">Заполните форму и мы Вам перезвоним!</p>
+
+            <input
+
+                class="form-name"
+
+                type="text"
+
+                name="nameUser"
+
+                placeholder="Ваше имя"
+
+                required
+
+            />
+
+            <div class="form-tel">
+
+                <img
+
+                    class="form-tel-flag"
+
+                    src="images/russia.svg"
+
+                    alt="ru"
+
+                    data-country="russia"
+
+                />
+
+                <img
+
+                    class="form-tel-arrow"
+
+                    src="images/arrow-form.svg"
+
+                    alt="arrow"
+
+                />
+
+                <p class="form-tel-code">+7</p>
+
+                <input
+
+                    class="form-tel-number telephone"
+
+                    type="text"
+
+                    name="telephoneUser"
+
+                    placeholder="(999) 999-99-99"
+
+                />
+
+                <ul class="form-tel-code_list">
+
+                    <li
+
+                        class="form-tel-code_item"
+
+                        data-country="russia"
+
+                    >
+
+                        <img
+
+                            class="form-tel-flag"
+
+                            src="images/russia.svg"
+
+                            alt="russia"
+
+                        />
+
+                        <span>+7</span>
+
+                    </li>
+
+                    <li
+
+                        class="form-tel-code_item"
+
+                        data-country="belarus"
+
+                    >
+
+                        <img
+
+                            class="form-tel-flag"
+
+                            src="images/belarus.svg"
+
+                            alt="belarus"
+
+                        />
+
+                        <span>+375</span>
+
+                    </li>
+
+                    <li
+
+                        class="form-tel-code_item"
+
+                        data-country="georgia"
+
+                    >
+
+                        <img
+
+                            class="form-tel-flag"
+
+                            src="images/georgia.svg"
+
+                            alt="georgia"
+
+                        />
+
+                        <span>+995</span>
+
+                    </li>
+
+                    <li class="form-tel-code_item" data-country="usa">
+
+                        <img
+
+                            class="form-tel-flag"
+
+                            src="images/usa.svg"
+
+                            alt="usa"
+
+                        />
+
+                        <span>+1</span>
+
+                    </li>
+
+                    <li
+
+                        class="form-tel-code_item"
+
+                        data-country="poland"
+
+                    >
+
+                        <img
+
+                            class="form-tel-flag"
+
+                            src="images/poland.svg"
+
+                            alt="poland"
+
+                        />
+
+                        <span>+48</span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <button class="form-btn btn btn-popup" type="submit">
+
+                Отправить
+
+            </button>
+
+            <p class="contacts__form-text">
+
+                Оставляя заявку, вы даете согласие на обработку персональных
+
+                данных
+
+            </p>
+
+            <img class="popup-close" src="images/cross.svg" alt="close-popup">
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<div class="feedback">
+
+    <div class="feedback__popup-inner">
+
+        <p class="feedback__popup-text">Спасибо <span class="feedback__popup-nameUser"></span>, за вашу заявку.</p>
+
+        <p class="feedback__popup-text">Скоро наш специалист с вами свяжется!</p>
+
+        <img class="feedback__popup-close" src="images/cross.svg" alt="close-popup">
+
+    </div>
+
+</div>
+
+        <footer class="footer">
+
+            <div class="footer__container">
+
+                <div class="footer__inner">
+
+                    <a class="nav__logo nav__logo-footer" href="#">
+
+                        <img class="nav__logo-img footer__logo" src="images/logo-text.svg" alt="Ferrari" >
+
+                    </a>
+
+                    <nav class="footer__nav nav">
+
+                        <ul class="nav__list">
+
+                            <li class="nav__item">
+
+                                <a class="nav__item-link" href="#services">
+
+                                    Услуги 
+
+                                </a>
+
+                            </li>
+
+                            <li class="nav__item">
+
+                                <a class="nav__item-link" href="#benefits">
+
+                                    Преимущества
+
+                                </a>
+
+                            </li>
+
+                            <li class="nav__item">
+
+                                <a class="nav__item-link" href="#works">
+
+                                    Наши работы
+
+                                </a>
+
+                            </li>
+
+                            <li class="nav__item">
+
+                                <a class="nav__item-link" href="#contacts">
+
+                                    Контакты
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                        <a  class="nav__btn" href="#header">Наверх</a>
+
+                    </nav>
+
+                    <p class="footer__copy">© 2023 Company name</p>
+
+                    <p class="footer__content-text">Все права защищены</p>
+
+                    <p class="footer__content-cond">Политика конфиденциальности</p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        </div>
+
+        <!--Подключаем JavaScript в самом конце-->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="js/main.min.js"></script>
+
